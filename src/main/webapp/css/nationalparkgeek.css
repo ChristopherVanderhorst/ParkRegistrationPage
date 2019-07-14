@@ -1,0 +1,117 @@
+body {
+	background-color: white;
+	font-family: sans-serif;
+}
+
+header {
+	margin: 25px;
+}
+
+header h1 {
+	font-size: 21pt;
+	color: #FFFFFF;
+}
+
+header p {
+	color: #FFFFFF;
+	/*font-size: 12pt;*/
+}
+
+header img {
+	height: 110px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.forecastGrid {
+display: grid;
+grid-template-columns: 30% auto;
+grid-template-rows: 15% 60% 20%;
+grid-template-areas:
+"today ."
+"todayImg fourDay"
+"todayHL ."
+
+}
+
+.today {
+grid-area: today;
+}
+
+.todayImg {
+grid-area: todayImg;
+}
+
+.todayHL {
+grid-area: todayHL;
+}
+
+.highLow {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+
+.imgDay1 {
+grid-area: imgDay1;
+size: 80%;
+}
+
+.imgDay2 {
+grid-area: imgDay2;
+size: 80%;
+}
+
+.high1 {
+grid-area: high1;
+}
+
+.low1 {
+grid-area: low1;
+}
+
+.column {
+  float: left;
+  width: 18%;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h3 { 
+	position: relative; 
+	top: 15px;
+	left: 50px;
+}
+
+.bg {
+	width: 100%;
+	height: 350px;
+}
+
